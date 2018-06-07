@@ -5,6 +5,12 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import java.util.AbstractCollection;
+import java.util.AbstractSet;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 import org.junit.Test;
 import interfaces.Pedido;
 import interfaces.PedidoPeligroso;
@@ -204,6 +210,18 @@ public class TestPedidos {
          */
 
         // Coleccion pedidos
+    	ArrayList pedidos = new ArrayList<PedidoNacional>(); 
+    	//lo he intentado con AbstractSet, pero no había manera de inicializarlo con un valor que no fuera null 
+    	
+    	PedidoNacional nacionalg = new PedidoNacional("Gondor", 10);
+    	PedidoNacional nacionalt = new PedidoNacional("Minas Tirith", 10);
+    	PedidoNacional nacionalr = new PedidoNacional("Rohan", 10);
+    	
+    	
+    	pedidos.add(nacionalg);
+    	pedidos.add(nacionalt);
+    	pedidos.add(nacionalr);
+    	
         assertTrue(pedidos.size() == 3);
 
         TratamientoPedidoMultiple pedidosMult = new TratamientoPedidoMultiple(pedidos);
