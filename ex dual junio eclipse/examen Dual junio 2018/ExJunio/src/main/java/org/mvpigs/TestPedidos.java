@@ -211,8 +211,9 @@ public class TestPedidos {
 
         // Coleccion pedidos
     	ArrayList pedidos = new ArrayList<PedidoNacional>(); 
-    	//lo he intentado con AbstractSet, pero no había manera de inicializarlo con un valor que no fuera null 
-    	
+    	/*lo he intentado con AbstractSet, pero no había manera de inicializarlo con un valor que no fuera null;
+    	 * hubiera buscado en stackOverflow cómo hacerlo pero no podía así que lo he dejado con ArrayList 
+    	*/
     	PedidoNacional nacionalg = new PedidoNacional("Gondor", 10);
     	PedidoNacional nacionalt = new PedidoNacional("Minas Tirith", 10);
     	PedidoNacional nacionalr = new PedidoNacional("Rohan", 10);
