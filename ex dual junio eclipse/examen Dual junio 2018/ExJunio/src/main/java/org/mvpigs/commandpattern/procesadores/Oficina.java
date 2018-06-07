@@ -8,17 +8,20 @@ import interfaces.TratamientoPedido;
 public class Oficina implements Procesador {
 
 	public boolean procesa(TratamientoPedido tratamientoInt) {
-		// TODO Auto-generated method stub
-		return false;
+		if(tratamientoInt.tratar()) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	public String printarStatus(boolean procesa, Pedido pedido) {
-		// TODO Auto-generated method stub
 		if(procesa) {
-			return("El pedido con destino "+pedido.destino()+" y peso "+pedido.peso()+" ha sido aceptado.");
+			return(pedido.destino()+" ACEPTADO");
 		}
 		else {
-			return("El pedido con destino "+pedido.destino()+" y peso "+pedido.peso()+" ha sido rechazado.");
+			return(pedido.destino()+" RECHAZADO");
 		}
 	}
 
