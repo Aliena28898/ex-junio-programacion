@@ -1,4 +1,6 @@
-package org.mvpigs.commandpattern.interfaces;
+package interfaces;
+
+import interfaces.Pedido;
 
 /**
  * La interfaz PedidoPeligroso implementa el metodo:

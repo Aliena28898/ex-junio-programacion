@@ -6,10 +6,10 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.mvpigs.commandpattern.interfaces.Pedido;
-import org.mvpigs.commandpattern.interfaces.PedidoPeligroso;
+import interfaces.Pedido;
+import interfaces.PedidoPeligroso;
 import org.mvpigs.commandpattern.interfaces.Procesador;
-import org.mvpigs.commandpattern.interfaces.TratamientoPedido;
+import interfaces.TratamientoPedido;
 import org.mvpigs.commandpattern.pedidos.PedidoInternacional;
 import org.mvpigs.commandpattern.pedidos.PedidoNacional;
 import org.mvpigs.commandpattern.pedidos.PedidoPeligrosoOrden;

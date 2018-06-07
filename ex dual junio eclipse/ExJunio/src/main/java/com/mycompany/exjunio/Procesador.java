@@ -1,5 +1,7 @@
 package org.mvpigs.commandpattern.interfaces;
 
+import interfaces.TratamientoPedido;
+
 /**
  * La interfaz procesador implementa el metodo:
  * 

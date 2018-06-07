@@ -1,4 +1,4 @@
-package org.mvpigs.commandpattern.interfaces;
+package interfaces;
 
 /**
  * La interfaz Pedido implementa los metodos:

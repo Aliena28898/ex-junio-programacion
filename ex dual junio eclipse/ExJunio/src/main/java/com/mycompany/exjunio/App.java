@@ -1,8 +1,8 @@
-package org.mvpigs.commandpattern;
+package com.mycompany.exjunio;
 
-import org.mvpigs.commandpattern.interfaces.Pedido;
-import org.mvpigs.commandpattern.interfaces.PedidoPeligroso;
-import org.mvpigs.commandpattern.interfaces.TratamientoPedido;
+import interfaces.Pedido;
+import interfaces.PedidoPeligroso;
+import interfaces.TratamientoPedido;
 import org.mvpigs.commandpattern.pedidos.PedidoInternacional;
 import org.mvpigs.commandpattern.pedidos.PedidoPeligrosoOrden;
 import org.mvpigs.commandpattern.procesadores.Oficina;
